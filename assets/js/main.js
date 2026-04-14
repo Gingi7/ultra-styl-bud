@@ -47,24 +47,7 @@
     lastScroll = y;
   }, { passive: true });
 
-  // Dropdown toggle (keyboard + click)
-  $$('.nav-dropdown').forEach(dd => {
-    const trigger = dd.querySelector('.nav-dropdown-trigger');
-    if (!trigger) return;
-    trigger.addEventListener('click', e => {
-      e.stopPropagation();
-      const isOpen = dd.classList.toggle('open');
-      trigger.setAttribute('aria-expanded', String(isOpen));
-    });
-    // Close on outside click
-    document.addEventListener('click', () => {
-      dd.classList.remove('open');
-      trigger.setAttribute('aria-expanded', 'false');
-    });
-    dd.addEventListener('click', e => e.stopPropagation());
-  });
-
-  /* -------------------------------------------------------
+/* -------------------------------------------------------
      ACTIVE NAV LINK
   ------------------------------------------------------- */
   const currentFile = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
@@ -85,7 +68,6 @@
       navToggle.classList.toggle('is-open', isOpen);
       navToggle.setAttribute('aria-expanded', String(isOpen));
       if (siteNav) siteNav.classList.toggle('nav-open', isOpen);
-      document.body.style.overflow = isOpen ? 'hidden' : '';
     });
     $$('.nav-links a').forEach(a => {
       a.addEventListener('click', () => {
@@ -93,7 +75,6 @@
         navToggle.classList.remove('is-open');
         navToggle.setAttribute('aria-expanded', 'false');
         if (siteNav) siteNav.classList.remove('nav-open');
-        document.body.style.overflow = '';
       });
     });
   }
