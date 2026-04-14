@@ -456,6 +456,7 @@ html.is-loading .page-loader {
   height: 2.4em;
   text-align: center;
   opacity: 0;
+  margin-top: -.5rem;
   animation: heroRHFadeIn 1s ease .35s forwards;
 }
 .hero-rot-word {
