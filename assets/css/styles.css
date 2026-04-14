@@ -358,10 +358,13 @@ html.is-loading .page-loader {
 .nav-toggle.is-open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
 @media (max-width: 860px) {
-  /* NAV — ciemny pasek, sticky, nie nakrywa hero */
+  /* NAV — fixed jak w PREMIUM, zawsze ciemne tło */
   .site-nav {
-    position: sticky !important;
+    position: fixed !important;
     top: 0;
+    left: 0;
+    right: 0;
+    z-index: 500 !important;
     background: rgba(17,17,17,.97) !important;
     backdrop-filter: blur(8px);
     box-shadow: 0 1px 0 rgba(255,255,255,.07) !important;
@@ -379,6 +382,7 @@ html.is-loading .page-loader {
   .site-nav.nav-scrolled .nav-links a {
     color: rgba(255,255,255,.7) !important;
   }
+  /* Menu fullscreen overlay — jak w PREMIUM */
   .nav-links {
     display: none;
     position: fixed;
@@ -389,13 +393,17 @@ html.is-loading .page-loader {
     align-items: center;
     gap: 2rem;
     font-size: .9rem;
-    z-index: 400;
+    z-index: 450;
   }
   .nav-links.open { display: flex; }
-  .nav-toggle { display: flex; }
+  /* Hamburger nad menu */
+  .nav-toggle { display: flex; z-index: 600; }
+  /* Hero body — padding-top żeby treść nie chowała się za fixed nav (~80px) */
+  .hero-body { padding-top: 88px !important; }
+  /* Dropdown na mobile */
   .nav-dropdown-menu {
     position: static;
-    transform: none !important; /* blokuje translateX(-50%) z desktopu */
+    transform: none !important;
     opacity: 1;
     visibility: visible;
     pointer-events: all;
