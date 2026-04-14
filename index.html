@@ -265,7 +265,7 @@
         <div class="przewaga-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:start;">
           <div>
             <span style="font-size:.6rem; text-transform:uppercase; letter-spacing:.2em; font-weight:700; color:var(--c-accent);">Główna przewaga</span>
-            <h2 id="przewaga-heading" class="split-animate" style="font-family:var(--font-display); font-size:clamp(1.8rem,3.5vw,3.2rem); font-weight:700; line-height:1.1; margin-top:.5rem; overflow-wrap:break-word; hyphens:auto;">Większość firm buduje<br>na podwykonawcach. Ja nie.</h2>
+            <h2 id="przewaga-heading" class="split-animate" style="font-family:var(--font-display); font-size:clamp(1.8rem,3.5vw,3.2rem); font-weight:700; line-height:1.1; margin-top:.5rem; overflow-wrap:break-word; hyphens:auto;">Odpowiadam za cały proces<br>od początku do końca.</h2>
             <p style="font-size:1.05rem; line-height:1.75; margin-top:1.5rem; opacity:.85;">
               Standardowy model działania w branży: firma przyjmuje zlecenie, a potem przekazuje je dalej — do tańszej ekipy, której nigdy nie widziałeś. Zysk dla firmy. Ryzyko i niepewność dla Ciebie.
             </p>
@@ -773,6 +773,10 @@
           </details>
         </div>
       </div>
+      <div style="max-width:var(--max); margin:2.5rem auto 0; padding:0 var(--px); border-top:1px solid var(--c-border); padding-top:2.5rem; display:flex; align-items:center; justify-content:space-between; gap:2rem; flex-wrap:wrap;">
+        <p style="margin:0; font-size:.95rem; opacity:.65; max-width:34rem;">Szukasz więcej porad? Na blogu znajdziesz praktyczne artykuły o wykończeniach, remontach łazienek i cenach usług na Podkarpaciu.</p>
+        <a href="blog.html" style="display:inline-block; font-size:.6rem; text-transform:uppercase; letter-spacing:.15em; font-weight:700; color:var(--c-accent); border-bottom:1px solid rgba(200,169,110,.35); padding-bottom:.35rem; white-space:nowrap; text-decoration:none; transition:color .2s,border-color .2s;" onmouseover="this.style.color='var(--c-dark)';this.style.borderColor='rgba(17,17,17,.4)';" onmouseout="this.style.color='var(--c-accent)';this.style.borderColor='rgba(200,169,110,.35)';">Przejdź do bloga →</a>
+      </div>
     </section>
 
     <!-- OBSZAR DZIAŁANIA -->
@@ -895,5 +899,58 @@
 <script src="assets/js/vendor/ScrollTrigger.min.js"></script>
 <script src="assets/js/vendor/lenis.min.js"></script>
 <script src="assets/js/main.js"></script>
+<script>
+(function () {
+  var track = document.querySelector('.reviews-track');
+  if (!track) return;
+  // Wyłącz animację CSS — przejmuje JS
+  track.style.animation = 'none';
+
+  var offset = 0;
+  var paused = false;
+  var halfWidth = 0;
+  var pxPerFrame = 0.55;
+
+  function getHalf() {
+    return track.scrollWidth / 2;
+  }
+
+  function tick() {
+    if (!paused) {
+      if (!halfWidth) halfWidth = getHalf();
+      offset += pxPerFrame;
+      if (offset >= halfWidth) offset -= halfWidth;
+      track.style.transform = 'translateX(-' + offset + 'px)';
+    }
+    requestAnimationFrame(tick);
+  }
+  requestAnimationFrame(tick);
+
+  // Desktop — pauza po najechaniu
+  track.addEventListener('mouseenter', function () { paused = true; });
+  track.addEventListener('mouseleave', function () { paused = false; });
+
+  // Mobile — przeciąganie dotykowe
+  var touchStartX = 0;
+  var baseOffset = 0;
+
+  track.addEventListener('touchstart', function (e) {
+    paused = true;
+    touchStartX = e.touches[0].clientX;
+    baseOffset = offset;
+    if (!halfWidth) halfWidth = getHalf();
+  }, { passive: true });
+
+  track.addEventListener('touchmove', function (e) {
+    var dx = touchStartX - e.touches[0].clientX;
+    offset = ((baseOffset + dx) % halfWidth + halfWidth) % halfWidth;
+    track.style.transform = 'translateX(-' + offset + 'px)';
+  }, { passive: true });
+
+  track.addEventListener('touchend', function () {
+    setTimeout(function () { paused = false; }, 900);
+  });
+})();
+</script>
 </body>
 </html>

@@ -330,7 +330,7 @@ html.is-loading .page-loader {
     align-items: center;
     gap: 2rem;
     font-size: .9rem;
-    z-index: 400;
+    z-index: 550;
   }
   .nav-links.open { display: flex; }
   .nav-toggle { display: flex; z-index: 600; }
@@ -774,6 +774,8 @@ html.is-loading .page-loader {
   .card-inner { grid-template-columns: 1fr; }
   .card-item { top: 5vh; height: 85vh; }
   .card-img-wrap { height: 42%; order: -1; min-height: 250px; }
+  .card-desc ul { display: none; }
+  .card-link { margin-top: .75rem; }
 }
 
 /* ===========================================================
@@ -922,8 +924,8 @@ html.is-loading .page-loader {
   background: var(--c-border);
   border: 1px solid var(--c-border);
 }
-@media (max-width: 720px) {
-  .service-grid { grid-template-columns: 1fr; }
+@media (max-width: 860px) {
+  .service-grid { grid-template-columns: 1fr !important; }
 }
 .service-card {
   background: var(--c-bg);

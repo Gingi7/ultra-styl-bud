@@ -68,6 +68,7 @@
       navToggle.classList.toggle('is-open', isOpen);
       navToggle.setAttribute('aria-expanded', String(isOpen));
       if (siteNav) siteNav.classList.toggle('nav-open', isOpen);
+      if (isOpen) { lenis.stop(); } else { lenis.start(); }
     });
     $$('.nav-links a').forEach(a => {
       a.addEventListener('click', () => {
@@ -75,6 +76,7 @@
         navToggle.classList.remove('is-open');
         navToggle.setAttribute('aria-expanded', 'false');
         if (siteNav) siteNav.classList.remove('nav-open');
+        lenis.start();
       });
     });
   }
