@@ -1641,10 +1641,10 @@ details[open] .faq-q::after { transform: translateY(-50%) rotate(45deg); }
 }
 .footer-logo-link {
   display: inline-block;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .footer-logo {
-  height: 80px;
+  height: clamp(100px, 10vw, 160px);
   width: auto;
   display: block;
   margin: 0 auto;
