@@ -1646,7 +1646,7 @@ details[open] .faq-q::after { transform: translateY(-50%) rotate(45deg); }
   margin-bottom: 2rem;
 }
 .footer-logo {
-  height: 400px;
+  height: 80px;
   width: auto;
   display: block;
   margin: 0 auto;
