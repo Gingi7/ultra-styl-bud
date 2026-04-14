@@ -63,12 +63,25 @@
   const navLinks = $('.nav-links');
 
   if (navToggle && navLinks) {
+    var _navScrollY = 0;
+
+    function lockScroll() {
+      _navScrollY = window.scrollY;
+      document.body.style.cssText = 'position:fixed;top:-' + _navScrollY + 'px;width:100%;overflow:hidden;';
+      lenis.stop();
+    }
+    function unlockScroll() {
+      document.body.style.cssText = '';
+      window.scrollTo(0, _navScrollY);
+      lenis.start();
+    }
+
     navToggle.addEventListener('click', () => {
       const isOpen = navLinks.classList.toggle('open');
       navToggle.classList.toggle('is-open', isOpen);
       navToggle.setAttribute('aria-expanded', String(isOpen));
       if (siteNav) siteNav.classList.toggle('nav-open', isOpen);
-      if (isOpen) { lenis.stop(); } else { lenis.start(); }
+      if (isOpen) { lockScroll(); } else { unlockScroll(); }
     });
     $$('.nav-links a').forEach(a => {
       a.addEventListener('click', () => {
@@ -76,7 +89,7 @@
         navToggle.classList.remove('is-open');
         navToggle.setAttribute('aria-expanded', 'false');
         if (siteNav) siteNav.classList.remove('nav-open');
-        lenis.start();
+        unlockScroll();
       });
     });
   }
