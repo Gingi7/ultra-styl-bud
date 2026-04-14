@@ -1817,8 +1817,7 @@ details[open] .faq-q::after { transform: translateY(-50%) rotate(45deg); }
     gap: 2rem !important;
   }
 
-  /* Cards wrapper — reduce excessive 100vh bottom padding */
-  .cards-wrapper { padding-bottom: 40vh !important; }
+  .cards-wrapper { padding-bottom: 8vh !important; }
 
   /* Jak pracuję — 4-col → 2-col */
   .proces-steps {
@@ -1862,8 +1861,7 @@ details[open] .faq-q::after { transform: translateY(-50%) rotate(45deg); }
   /* Jak pracuję — 2-col → 1-col on small screens */
   .proces-steps { grid-template-columns: 1fr !important; }
 
-  /* Cards wrapper — further reduce on small mobile */
-  .cards-wrapper { padding-bottom: 20vh !important; }
+  .cards-wrapper { padding-bottom: 5vh !important; }
 
   /* Review slides — full width on small mobile */
   .review-slide { min-width: 85vw !important; max-width: 85vw !important; }
