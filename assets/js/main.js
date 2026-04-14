@@ -339,7 +339,6 @@
       gsap.to('.hero-kicker', { opacity: 1, y: 0, duration: 1, delay: 0.25, ease: 'power3.out' });
       gsap.to('.hero-fade', { opacity: 1, duration: 1, delay: 0.5 });
       gsap.to('.hero-actions', { opacity: 1, duration: 1, delay: 0.7 });
-      gsap.to('.hero-note', { opacity: 1, duration: 1, delay: 0.9 });
 
       if ($$('.hero-slider').length) {
         gsap.to('.hero-slider', {

@@ -560,30 +560,6 @@ html.is-loading .page-loader {
   margin-top: 2rem;
   opacity: 0;
 }
-/* Hero note — checkmarks under CTA */
-.hero-note {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: .75rem 1.5rem;
-  margin-top: 1.5rem;
-  opacity: 0;
-}
-.hero-note-item {
-  font-size: .6rem;
-  text-transform: uppercase;
-  letter-spacing: .1em;
-  font-weight: 700;
-  color: rgba(255,255,255,.7);
-  display: flex;
-  align-items: center;
-  gap: .4rem;
-}
-.hero-note-item::before {
-  content: '✓';
-  color: var(--c-accent);
-  font-size: .75rem;
-}
 /* Hero slideshow dots */
 .hero-dots {
   position: absolute;
