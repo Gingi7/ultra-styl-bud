@@ -129,7 +129,7 @@
     }
 
     function startAuto() {
-      interval = setInterval(() => goTo(cur + 1), 5000);
+      interval = setInterval(() => goTo(cur + 1), 8000);
     }
 
     heroDots.forEach((dot, i) => {
