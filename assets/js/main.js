@@ -143,8 +143,12 @@
 
     $$('.filter-btn', filtersWrap).forEach(btn => {
       btn.addEventListener('click', () => {
-        $$('.filter-btn', filtersWrap).forEach(b => b.setAttribute('aria-pressed', 'false'));
+        $$('.filter-btn', filtersWrap).forEach(b => {
+          b.setAttribute('aria-pressed', 'false');
+          b.classList.remove('active');
+        });
         btn.setAttribute('aria-pressed', 'true');
+        btn.classList.add('active');
         applyFilter(btn.getAttribute('data-filter') || 'all');
       });
     });
