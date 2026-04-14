@@ -64,15 +64,17 @@
 
   if (navToggle && navLinks) {
     var _navScrollY = 0;
+    var _preventTouch = function(e) { e.preventDefault(); };
 
     function lockScroll() {
       _navScrollY = window.scrollY;
-      document.body.style.cssText = 'position:fixed;top:-' + _navScrollY + 'px;width:100%;overflow:hidden;';
+      document.body.style.overflow = 'hidden';
+      document.addEventListener('touchmove', _preventTouch, { passive: false });
       lenis.stop();
     }
     function unlockScroll() {
-      document.body.style.cssText = '';
-      window.scrollTo(0, _navScrollY);
+      document.body.style.overflow = '';
+      document.removeEventListener('touchmove', _preventTouch);
       lenis.start();
     }
 
