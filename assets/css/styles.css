@@ -336,6 +336,8 @@ html.is-loading .page-loader {
   .nav-toggle { display: flex; z-index: 600; }
   .hero-body { padding-top: 88px !important; }
   .hero-headline { margin-top: -1rem !important; }
+  .hero-headline span { font-size: clamp(1.65rem,4.4vw,4.4rem) !important; }
+  .hero-rot-word { font-size: clamp(1.65rem,4.4vw,4.4rem) !important; }
   /* Usługi — sekcja z podkategoriami */
   .nav-group { flex-direction: column; align-items: center; gap: .5rem; }
   .nav-group-label {
