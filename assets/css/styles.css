@@ -1625,7 +1625,7 @@ details[open] .faq-q::after { transform: translateY(-50%) rotate(45deg); }
   margin-bottom: 2rem;
 }
 .footer-logo {
-  height: 200px;
+  height: 400px;
   width: auto;
   display: block;
   margin: 0 auto;
@@ -1641,11 +1641,12 @@ details[open] .faq-q::after { transform: translateY(-50%) rotate(45deg); }
 }
 .footer-headline {
   font-family: var(--font-display);
-  font-size: clamp(2rem, 5vw, 5rem);
+  font-size: clamp(1.5rem, 4.5vw, 5rem);
   font-weight: 700;
   line-height: .92;
   letter-spacing: -.02em;
   display: block;
+  white-space: nowrap;
   transition: color .3s;
 }
 .footer-headline:hover { color: var(--c-accent); }
@@ -1679,6 +1680,48 @@ details[open] .faq-q::after { transform: translateY(-50%) rotate(45deg); }
 }
 .footer-copy a { color: rgba(255,255,255,.35); border-bottom: 1px solid rgba(255,255,255,.15); }
 .footer-copy a:hover { color: var(--c-accent); }
+
+/* digimar.pro agency credit */
+.digimar-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: .75rem;
+  border: 1px solid rgba(255,255,255,.08);
+  padding: .65rem 1.1rem;
+  text-decoration: none;
+  transition: border-color .3s, box-shadow .3s;
+}
+.digimar-badge:hover {
+  border-color: rgba(200,169,110,.3);
+  box-shadow: 0 0 16px rgba(200,169,110,.08);
+}
+.digimar-icon-wrap {
+  position: relative;
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(200,169,110,.25);
+  color: var(--c-accent);
+  transition: border-color .3s;
+}
+.digimar-badge:hover .digimar-icon-wrap { border-color: rgba(200,169,110,.5); }
+.digimar-shimmer {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--c-accent), transparent);
+  opacity: .45;
+  transition: opacity .3s;
+}
+.digimar-badge:hover .digimar-shimmer { opacity: 1; }
+
+@media (max-width: 600px) {
+  /* Prevent floating scroll button overlapping polityka prywatności */
+  .footer-inner { padding-bottom: 5rem; }
+}
 
 /* ===========================================================
    CONTACT FORM

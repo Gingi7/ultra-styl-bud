@@ -810,12 +810,17 @@
             <p style="margin-top:.75rem; font-size:.85rem; opacity:.65; line-height:1.6;">Nie widzisz swojej miejscowości? <a href="tel:+48601319872" style="color:var(--c-accent);">Zadzwoń</a> — dojeżdżam do klientów w promieniu 100 km.</p>
           </div>
           <div>
-            <div class="map-consent" id="map-consent" style="background:var(--c-bg); border:1px solid var(--c-border); padding:3rem 2rem; text-align:center; height:100%; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:1rem;">
-              <p style="font-size:2rem; line-height:1;">🗺️</p>
-              <p style="font-family:var(--font-display); font-weight:700; font-size:1.1rem;">Mapa obszaru działania</p>
-              <p style="font-size:.9rem; opacity:.7; max-width:260px; line-height:1.6;">Kliknij, aby załadować mapę Google.<br><small>Twój adres IP może zostać przekazany do Google LLC.</small></p>
-              <button class="btn-primary" id="map-consent-btn" style="margin-top:.5rem;">Pokaż mapę</button>
-            </div>
+            <!-- Mapa Rzeszów i okolice — obszar działania STYL-BUD -->
+            <iframe
+              src="https://maps.google.com/maps?q=Rzesz%C3%B3w%2C+woj.+podkarpackie&output=embed&hl=pl&z=10"
+              width="100%"
+              height="420"
+              style="border:0; display:block;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Obszar działania STYL-BUD — Rzeszów i województwo podkarpackie"
+            ></iframe>
           </div>
         </div>
       </div>
@@ -856,6 +861,21 @@
           <span aria-label="Fixly" title="Fixly" style="display:inline-flex; align-items:center; opacity:.3; cursor:default; transition:opacity .25s; font-family:var(--font-display); font-size:.82rem; font-weight:700; letter-spacing:.06em; color:#fff;" onmouseover="this.style.opacity='.85'" onmouseout="this.style.opacity='.3'">FIXLY</span>
           <span aria-label="Oferteo" title="Oferteo" style="display:inline-flex; align-items:center; opacity:.3; cursor:default; transition:opacity .25s; font-family:var(--font-display); font-size:.82rem; font-weight:700; letter-spacing:.06em; color:#fff;" onmouseover="this.style.opacity='.85'" onmouseout="this.style.opacity='.3'">OFERTEO</span>
         </div>
+      </div>
+      <!-- AGENCY CREDIT — digimar.pro -->
+      <div style="margin-top:1.5rem; display:flex; justify-content:center;">
+        <a href="https://digimar.pro" target="_blank" rel="noopener noreferrer"
+           class="digimar-badge" aria-label="Strona stworzona przez agencję marketingową digimar.pro">
+          <div class="digimar-icon-wrap">
+            <div class="digimar-shimmer"></div>
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14.6 16.6l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4zm-5.2 0L4.8 12l4.6-4.6L8 6 2 12l6 6 1.4-1.4z"/></svg>
+          </div>
+          <div>
+            <span style="display:block; font-size:.48rem; text-transform:uppercase; letter-spacing:.18em; color:rgba(255,255,255,.35);">Projekt i Marketing Cyfrowy</span>
+            <span style="display:block; font-family:var(--font-display); font-weight:700; font-size:.6rem; color:var(--c-accent); opacity:.7; letter-spacing:.08em; margin-top:.15rem;">digimar.pro</span>
+          </div>
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color:rgba(255,255,255,.25);" aria-hidden="true"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+        </a>
       </div>
       <p class="footer-copy">© <span id="y">2026</span> STYL-BUD Tomasz Pietraszak · NIP: 7951649407 · <a href="polityka-prywatnosci.html">Polityka prywatności</a> · <a href="mapa-strony.html">Mapa strony</a></p>
   </div>
