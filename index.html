@@ -910,23 +910,23 @@
     var spans = document.querySelectorAll('.hero-headline span');
     if (!spans.length || typeof gsap === 'undefined') return;
     gsap.to(spans, {
-      y: '-110%', duration: 0.5, ease: 'power2.in', stagger: 0.05,
+      y: '-110%', duration: 0.85, ease: 'power3.inOut', stagger: 0.07,
       onComplete: function () {
         spans.forEach(function (s, i) {
           s.textContent = phrases[idx][i] !== undefined ? phrases[idx][i] : '';
         });
         gsap.fromTo(spans,
           { y: '110%' },
-          { y: '0%', duration: 0.75, ease: 'power3.out', stagger: 0.08 }
+          { y: '0%', duration: 1.1, ease: 'power4.out', stagger: 0.1 }
         );
       }
     });
   }
 
-  /* Startuje 3.5 s po załadowaniu (po animacji wejścia GSAP) */
+  /* Startuje 4 s po załadowaniu, zmienia co 7 s */
   setTimeout(function () {
-    setInterval(rotate, 4500);
-  }, 3500);
+    setInterval(rotate, 7000);
+  }, 4000);
 }());
 </script>
 </body>

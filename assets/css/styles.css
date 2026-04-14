@@ -358,6 +358,27 @@ html.is-loading .page-loader {
 .nav-toggle.is-open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
 @media (max-width: 860px) {
+  /* NAV — ciemny pasek, sticky, nie nakrywa hero */
+  .site-nav {
+    position: sticky !important;
+    top: 0;
+    background: rgba(17,17,17,.97) !important;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 1px 0 rgba(255,255,255,.07) !important;
+    color: #fff !important;
+  }
+  .site-nav.nav-scrolled {
+    background: rgba(17,17,17,.97) !important;
+    color: #fff !important;
+  }
+  .site-nav.nav-scrolled .brand-logo,
+  .brand-logo {
+    height: 44px !important;
+    filter: invert(1) brightness(10) !important;
+  }
+  .site-nav.nav-scrolled .nav-links a {
+    color: rgba(255,255,255,.7) !important;
+  }
   .nav-links {
     display: none;
     position: fixed;
