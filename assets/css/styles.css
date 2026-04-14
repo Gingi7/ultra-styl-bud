@@ -277,6 +277,11 @@ html.is-loading .page-loader {
   opacity: 1;
 }
 
+/* Nav group — desktop: flat inline jak zwykłe linki */
+.nav-group { display: flex; align-items: center; }
+.nav-group-label { display: none; }
+.nav-sub { display: flex; gap: 1.75rem; list-style: none; padding: 0; align-items: center; }
+.nav-full { display: none; }
 
 /* Hamburger */
 .nav-toggle {
@@ -331,6 +336,21 @@ html.is-loading .page-loader {
   .nav-links.open { display: flex; }
   .nav-toggle { display: flex; z-index: 600; }
   .hero-body { padding-top: 88px !important; }
+  /* Usługi — sekcja z podkategoriami */
+  .nav-group { flex-direction: column; align-items: center; gap: .5rem; }
+  .nav-group-label {
+    display: block;
+    font-size: .5rem;
+    text-transform: uppercase;
+    letter-spacing: .22em;
+    font-weight: 700;
+    color: rgba(255,255,255,.35);
+    margin-bottom: .15rem;
+  }
+  .nav-sub { flex-direction: column; align-items: center; gap: .65rem; }
+  .nav-sub a { font-size: .82rem !important; color: rgba(255,255,255,.65) !important; opacity: 1 !important; }
+  .nav-sub a:hover, .nav-sub a[aria-current="page"] { color: var(--c-accent) !important; }
+  .nav-full { display: inline; }
 }
 
 /* ===========================================================
