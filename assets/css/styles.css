@@ -228,14 +228,14 @@ html.is-loading .page-loader {
   align-items: center;
 }
 .brand-logo {
-  height: 60px;
+  height: 120px;
   width: auto;
   display: block;
   filter: invert(1) brightness(10);
   transition: filter .35s ease, height .3s ease;
 }
 .site-nav.nav-scrolled .brand-logo {
-  height: 44px;
+  height: 60px;
   filter: none;
 }
 .nav-links {
@@ -1600,7 +1600,7 @@ details[open] .faq-q::after { transform: translateY(-50%) rotate(45deg); }
   margin-bottom: 2rem;
 }
 .footer-logo {
-  height: 80px;
+  height: 200px;
   width: auto;
   display: block;
   margin: 0 auto;
@@ -1616,7 +1616,7 @@ details[open] .faq-q::after { transform: translateY(-50%) rotate(45deg); }
 }
 .footer-headline {
   font-family: var(--font-display);
-  font-size: clamp(3rem, 8vw, 8rem);
+  font-size: clamp(2rem, 5vw, 5rem);
   font-weight: 700;
   line-height: .92;
   letter-spacing: -.02em;
@@ -1625,7 +1625,7 @@ details[open] .faq-q::after { transform: translateY(-50%) rotate(45deg); }
 }
 .footer-headline:hover { color: var(--c-accent); }
 .footer-phone {
-  font-size: 1.1rem;
+  font-size: .85rem;
   font-weight: 300;
   letter-spacing: .08em;
   color: rgba(255,255,255,.55);
