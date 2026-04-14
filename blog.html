@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script>document.documentElement.classList.add('is-loading');</script>
-  <title>O firmie STYL-BUD — 22 lata doświadczenia | Podkarpacie</title>
-  <meta name="description" content="STYL-BUD Tomasz Pietraszak: 22 lata doświadczenia w remontach i wykończeniach. Jeden fachowiec, pełen zakres, bez podwykonawców. Rzeszów i Podkarpacie.">
+  <title>Blog STYL-BUD — Porady Remontowe i Wykończeniowe | Podkarpacie</title>
+  <meta name="description" content="Praktyczna wiedza o remontach i wykończeniach wnętrz na Podkarpaciu. Porady STYL-BUD: ceny, etapy prac, płytki wielkoformatowe, łazienki i wykończenia pod klucz.">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://www.styl-bud.com.pl/o-firmie.html">
+  <link rel="canonical" href="https://www.styl-bud.com.pl/blog.html">
 
   <link rel="preload" href="assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/manrope-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
@@ -15,17 +15,17 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pl_PL">
   <meta property="og:site_name" content="STYL-BUD">
-  <meta property="og:title" content="O firmie STYL-BUD — 22 lata doświadczenia">
-  <meta property="og:description" content="Jeden fachowiec, pełen zakres, bez podwykonawców. Rzeszów i Podkarpacie.">
-  <meta property="og:url" content="https://www.styl-bud.com.pl/o-firmie.html">
-  <meta property="og:image" content="https://www.styl-bud.com.pl/media/photo/hero/styl-bud_hero_01.webp">
+  <meta property="og:title" content="Blog STYL-BUD — Porady remontowe i wykończeniowe">
+  <meta property="og:description" content="Praktyczna wiedza o remontach i wykończeniach wnętrz na Podkarpaciu. Porady STYL-BUD.">
+  <meta property="og:url" content="https://www.styl-bud.com.pl/blog.html">
+  <meta property="og:image" content="https://www.styl-bud.com.pl/media/photo/hero/styl-bud_hero_06.webp">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="O firmie STYL-BUD — 22 lata doświadczenia">
-  <meta name="twitter:description" content="Jeden fachowiec, pełen zakres, bez podwykonawców. Rzeszów i Podkarpacie.">
-  <meta name="twitter:image" content="https://www.styl-bud.com.pl/media/photo/hero/styl-bud_hero_01.webp">
+  <meta name="twitter:title" content="Blog STYL-BUD — Porady remontowe i wykończeniowe">
+  <meta name="twitter:description" content="Praktyczna wiedza o remontach i wykończeniach wnętrz na Podkarpaciu.">
+  <meta name="twitter:image" content="https://www.styl-bud.com.pl/media/photo/hero/styl-bud_hero_06.webp">
 
   <script type="application/ld+json">
   {
@@ -35,28 +35,28 @@
         "@type": "LocalBusiness",
         "@id": "https://www.styl-bud.com.pl/#business",
         "name": "STYL-BUD",
-        "legalName": "Pietraszak Tomasz STYL-BUD",
-        "description": "Usługi remontowo-wykończeniowe — remonty generalne, wykończenia mieszkań, remonty łazienek, lokale usługowe. Rzeszów i Podkarpacie.",
         "url": "https://www.styl-bud.com.pl/",
         "telephone": "+48601319872",
         "email": "tomekpietraszak@onet.eu",
-        "taxID": "7951649407",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Bachórzec 206",
-          "postalCode": "37-750",
-          "addressLocality": "Bachórzec",
-          "addressRegion": "Podkarpacie",
-          "addressCountry": "PL"
-        },
-        "areaServed": ["Rzeszów","Przemyśl","Jarosław","Łańcut","Strzyżów","Sanok","Krosno","Brzozów","Przeworsk","Leżajsk","Stalowa Wola","Tarnobrzeg"]
+        "taxID": "7951649407"
       },
       {
         "@type": "BreadcrumbList",
         "itemListElement": [
           {"@type":"ListItem","position":1,"name":"Strona główna","item":"https://www.styl-bud.com.pl/"},
-          {"@type":"ListItem","position":2,"name":"O firmie","item":"https://www.styl-bud.com.pl/o-firmie.html"}
+          {"@type":"ListItem","position":2,"name":"Blog","item":"https://www.styl-bud.com.pl/blog.html"}
         ]
+      },
+      {
+        "@type": "Blog",
+        "name": "Blog STYL-BUD",
+        "description": "Porady remontowe i wykończeniowe dla mieszkańców Podkarpacia",
+        "url": "https://www.styl-bud.com.pl/blog.html",
+        "publisher": {
+          "@type": "Organization",
+          "name": "STYL-BUD",
+          "url": "https://www.styl-bud.com.pl/"
+        }
       }
     ]
   }
@@ -71,6 +71,106 @@
   <meta name="theme-color" content="#111111">
 
   <link rel="stylesheet" href="assets/css/styles.css">
+
+  <style>
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.75rem;
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: .75rem 2rem 2.5rem;
+    }
+    a.blog-card {
+      color: inherit;
+      text-decoration: none;
+    }
+    .blog-card {
+      background: rgba(255,255,255,.03);
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 4px;
+      padding: 2rem 1.75rem;
+      display: flex;
+      flex-direction: column;
+      gap: .9rem;
+      transition: background .25s, border-color .25s;
+    }
+    .blog-card:hover {
+      background: rgba(255,255,255,.055);
+      border-color: rgba(255,255,255,.16);
+    }
+    .blog-card:hover .blog-card-read {
+      color: var(--c-accent);
+    }
+    .blog-card-tag {
+      font-size: .46rem;
+      text-transform: uppercase;
+      letter-spacing: .24em;
+      font-weight: 700;
+      color: var(--c-accent);
+      margin: 0;
+    }
+    .blog-card-title {
+      font-family: var(--font-display);
+      font-size: clamp(1rem, 1.8vw, 1.25rem);
+      font-weight: 700;
+      color: var(--c-light);
+      line-height: 1.3;
+      margin: 0;
+    }
+    .blog-card-desc {
+      font-size: .78rem;
+      color: rgba(255,255,255,.5);
+      line-height: 1.75;
+      flex: 1;
+      margin: 0;
+    }
+    .blog-card-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: .25rem;
+      padding-top: 1rem;
+      border-top: 1px solid rgba(255,255,255,.06);
+    }
+    .blog-card-date {
+      font-size: .45rem;
+      text-transform: uppercase;
+      letter-spacing: .18em;
+      color: rgba(255,255,255,.22);
+      font-weight: 600;
+    }
+    .blog-card-read {
+      font-size: .52rem;
+      text-transform: uppercase;
+      letter-spacing: .14em;
+      font-weight: 700;
+      color: rgba(255,255,255,.3);
+      transition: color .2s;
+    }
+    .blog-section-label {
+      max-width: 1120px;
+      margin: 1.5rem auto .5rem;
+      padding: 0 2rem;
+    }
+    .blog-section-label h2 {
+      font-size: .5rem;
+      text-transform: uppercase;
+      letter-spacing: .28em;
+      font-weight: 700;
+      color: rgba(255,255,255,.2);
+      margin: 0;
+      padding-bottom: .75rem;
+      border-bottom: 1px solid rgba(255,255,255,.06);
+    }
+    @media (max-width: 900px) {
+      .blog-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 560px) {
+      .blog-grid { grid-template-columns: 1fr; padding: .75rem 1.25rem 2rem; }
+      .blog-section-label { padding: 0 1.25rem; margin: 1rem auto .5rem; }
+    }
+  </style>
 </head>
 
 <body>
@@ -104,7 +204,7 @@
     <li><a href="realizacje.html">Realizacje</a></li>
     <li><a href="o-firmie.html">O firmie</a></li>
     <li><a href="kontakt.html">Kontakt</a></li>
-    <li><a href="blog.html">Blog</a></li>
+    <li><a href="blog.html" aria-current="page">Blog</a></li>
   </ul>
   <button class="nav-toggle" aria-label="Otwórz menu" aria-expanded="false">
     <span></span><span></span><span></span>
@@ -114,102 +214,115 @@
   <div class="wrapper">
     <main id="main">
 
-      <section class="page-hero" aria-label="O firmie STYL-BUD">
-        <img class="page-hero-img" src="media/photo/wnetrza/styl-bud_wnetrza_01.webp"
-          alt="STYL-BUD — Tomasz Pietraszak, wykończenia i remonty Podkarpacie" loading="eager" width="1600" height="900">
+      <section class="page-hero" aria-label="Blog STYL-BUD">
+        <img class="page-hero-img" src="media/photo/hero/styl-bud_hero_06.webp"
+          alt="Blog STYL-BUD — porady remontowe i wykończeniowe na Podkarpaciu" loading="eager" width="1600" height="900">
         <div class="page-hero-body">
-          <p class="page-hero-kicker">Podkarpacie · 22 lata</p>
+          <p class="page-hero-kicker">Wiedza i porady</p>
           <div class="page-hero-title" aria-hidden="true">
-            <span><em>O</em></span>
-            <span><em>FIRMIE</em></span>
+            <span><em>BLOG</em></span>
+            <span><em>STYL-BUD</em></span>
           </div>
         </div>
       </section>
 
       <div class="page-content">
-        <p class="page-h1">Remont od A do Z — bez zbędnych ekip i stresu.</p>
-        <p class="lead">Mam 22 lata doświadczenia w branży. Prowadzę STYL-BUD od 2010 roku. Klienci cenią mnie za sumienność, pracowitość i to, że znajduję rozwiązania nawet przy trudnych zadaniach.</p>
+        <p class="page-h1">Porady remontowe — wiedza prosto od ekipy.</p>
+        <p class="lead">Piszemy o tym, co faktycznie liczy się przy remoncie: ceny na Podkarpaciu, sprawdzone technologie i błędy, które kosztują najwięcej.</p>
+      </div>
 
-        <div class="service-grid">
-          <div class="service-card">
-            <h2>W czym pomogę</h2>
-            <ul>
-              <li>Kompleksowe wykończenia i remonty mieszkań oraz domów</li>
-              <li>Remonty i wykończenia łazienek (płytki, zabudowy, biały montaż)</li>
-              <li>Glazurnictwo: układanie płytek na ścianach i podłogach</li>
-              <li>Zabudowy i sufity z płyt g-k</li>
-              <li>Gładzie, szpachlowanie i malowanie</li>
-              <li>Układanie paneli podłogowych i montaż listew</li>
-              <li>Drobne prace elektryczne i hydrauliczne przy remoncie</li>
-              <li>Ocieplanie poddaszy</li>
-            </ul>
-          </div>
-          <div class="service-card">
-            <h2>Dlaczego warto</h2>
-            <ul>
-              <li><strong>Wszechstronność jednego wykonawcy</strong> — ogarniam wiele etapów prac, więc organizacja jest prostsza</li>
-              <li><strong>22 lata praktyki</strong> — doświadczenie, na którym możesz polegać</li>
-              <li><strong>Lubię wyzwania</strong> — gdy pojawia się problem, szukam skutecznego rozwiązania</li>
-              <li><strong>Pracuję sumiennie i dokładnie</strong> — zależy mi na estetycznym i solidnym efekcie</li>
-              <li><strong>0 podwykonawców</strong> — pracuję osobiście na każdym zleceniu</li>
-            </ul>
-          </div>
-        </div>
+      <!-- LOKALNE SEO -->
+      <div class="blog-section-label">
+        <h2>Dla mieszkańców Podkarpacia</h2>
+      </div>
+      <div class="blog-grid">
 
-        <h2 class="split-animate" style="margin-top:3rem;font-size:1.6rem;">Standard, nie wyjątek</h2>
-        <p class="lead" style="margin-bottom:2rem;">Każdy projekt prowadzę według tego samego, sprawdzonego procesu — żeby nie było niespodzianek.</p>
+        <a href="blog/koszt-wykonczenia-podkarpacie.html" class="blog-card">
+          <p class="blog-card-tag">Lokalne SEO · Cennik</p>
+          <h2 class="blog-card-title">Ile kosztuje wykończenie mieszkania na Podkarpaciu w 2026 roku?</h2>
+          <p class="blog-card-desc">Rynek nieruchomości w Rzeszowie i okolicach prężnie się rozwija. Zestawienie realnych kosztów wykończenia w trzech standardach — ekonomicznym, optymalnym i premium.</p>
+          <div class="blog-card-meta">
+            <span class="blog-card-date">Kwiecień 2026</span>
+            <span class="blog-card-read">Czytaj →</span>
+          </div>
+        </a>
 
-        <div class="process-grid">
-          <div class="process-step">
-            <div class="step-num">01</div>
-            <h3>Bezpłatna wycena</h3>
-            <p>Przyjeżdżam, oglądam, słucham. Wycena jest bezpłatna i bez zobowiązań. Dostajesz konkretny kosztorys.</p>
+        <a href="blog/remont-lazienki-podkarpacie.html" class="blog-card">
+          <p class="blog-card-tag">Lokalne SEO · Łazienki</p>
+          <h2 class="blog-card-title">Remont łazienki na Podkarpaciu: cena, etapy i realizacje STYL-BUD</h2>
+          <p class="blog-card-desc">Łazienka to serce każdego domu — ale też miejsce, gdzie najłatwiej o kosztowne błędy wykonawcze. Od hydroizolacji po biały montaż — jak to robimy.</p>
+          <div class="blog-card-meta">
+            <span class="blog-card-date">Kwiecień 2026</span>
+            <span class="blog-card-read">Czytaj →</span>
           </div>
-          <div class="process-step">
-            <div class="step-num">02</div>
-            <h3>Umowa i harmonogram</h3>
-            <p>Podpisujemy umowę z zakresem prac, terminem i ceną. Zero ustnych obietnic — tylko pismo.</p>
-          </div>
-          <div class="process-step">
-            <div class="step-num">03</div>
-            <h3>Realizacja z raportowaniem</h3>
-            <p>Pracuję osobiście. Codziennie informuję Cię o postępach — zdjęcia, status, plany na następny dzień.</p>
-          </div>
-          <div class="process-step">
-            <div class="step-num">04</div>
-            <h3>Odbiór i gwarancja</h3>
-            <p>Wspólny odbiór z protokołem. Gwarancja na wykonane prace. Jestem dostępny po remoncie.</p>
-          </div>
-        </div>
+        </a>
 
-        <h2 class="split-animate" style="margin-top:3rem;font-size:1.6rem;">Dane firmowe</h2>
-        <div class="contact-grid">
-          <div class="contact-cell">
-            <h3>Nazwa firmy</h3>
-            <strong>Pietraszak Tomasz "STYL-BUD"</strong>
-            <p style="font-size:0.85rem;margin-top:0.4rem;">Usługi remontowo-wykończeniowe</p>
+        <a href="blog/plytki-wielkoformatowe.html" class="blog-card">
+          <p class="blog-card-tag">Lokalne SEO · Glazura</p>
+          <h2 class="blog-card-title">Płytki wielkoformatowe w Rzeszowie — nowoczesny standard od STYL-BUD</h2>
+          <p class="blog-card-desc">Duże formaty płytek zdominowały trendy w 2026 roku. Minimalna ilość fug, efekt monolitu. Wyjaśniamy, dlaczego montaż dużego formatu to wyzwanie i jak je rozwiązujemy.</p>
+          <div class="blog-card-meta">
+            <span class="blog-card-date">Marzec 2026</span>
+            <span class="blog-card-read">Czytaj →</span>
           </div>
-          <div class="contact-cell">
-            <h3>Dane rejestrowe</h3>
-            <strong>NIP: 7951649407</strong>
-            <p style="font-size:0.85rem;margin-top:0.4rem;">REGON: 650954615</p>
-          </div>
-          <div class="contact-cell">
-            <h3>Adres</h3>
-            <strong>37-750 Bachórzec 206</strong>
-            <p style="font-size:0.85rem;margin-top:0.4rem;">Woj. Podkarpackie</p>
-          </div>
-          <div class="contact-cell">
-            <h3>Obszar działania</h3>
-            <strong>Województwo Podkarpackie</strong>
-            <p style="font-size:0.85rem;margin-top:0.4rem;">Rzeszów, Przemyśl, Jarosław, Mielec, Krosno i okolice</p>
-          </div>
-        </div>
+        </a>
 
-        <div class="page-actions" style="margin-top:3rem;">
-          <a class="btn-primary" href="kontakt.html">Zamów bezpłatną wycenę</a>
-          <a class="btn-ghost" href="galeria.html">Zobacz galeria realizacji</a>
-        </div>
+      </div>
+
+      <!-- PORADNIKI OGÓLNE -->
+      <div class="blog-section-label">
+        <h2>Poradniki ogólne</h2>
+      </div>
+      <div class="blog-grid">
+
+        <a href="blog/budowa-domu-krok-po-kroku.html" class="blog-card">
+          <p class="blog-card-tag">Poradnik · Budowa</p>
+          <h2 class="blog-card-title">Budowa domu krok po kroku w 2026 roku — harmonogram i koszty</h2>
+          <p class="blog-card-desc">Szczegółowy przewodnik od wbicia pierwszej łopaty po stan deweloperski. Formalności, wybór ekipy, etapy prac i normy energooszczędności WT 2021.</p>
+          <div class="blog-card-meta">
+            <span class="blog-card-date">Marzec 2026</span>
+            <span class="blog-card-read">Czytaj →</span>
+          </div>
+        </a>
+
+        <a href="blog/ceramika-czy-gazobeton.html" class="blog-card">
+          <p class="blog-card-tag">Poradnik · Materiały</p>
+          <h2 class="blog-card-title">Ceramika czy gazobeton? Z czego wybudować solidny dom w 2026 roku?</h2>
+          <p class="blog-card-desc">Wybór materiału na ściany wpływa na cenę, komfort cieplny i akustykę. Porównujemy dwa najpopularniejsze systemy pod kątem kosztów i właściwości izolacyjnych.</p>
+          <div class="blog-card-meta">
+            <span class="blog-card-date">Luty 2026</span>
+            <span class="blog-card-read">Czytaj →</span>
+          </div>
+        </a>
+
+        <a href="blog/termomodernizacja-domu.html" class="blog-card">
+          <p class="blog-card-tag">Poradnik · Termomodernizacja</p>
+          <h2 class="blog-card-title">Termomodernizacja starego domu — jak zacząć i dostać dofinansowanie?</h2>
+          <p class="blog-card-desc">Odpowiednio zaplanowane prace mogą zmniejszyć zapotrzebowanie na ciepło nawet o 60–70%. Program Czyste Powietrze i ulga termomodernizacyjna w 2026 roku.</p>
+          <div class="blog-card-meta">
+            <span class="blog-card-date">Luty 2026</span>
+            <span class="blog-card-read">Czytaj →</span>
+          </div>
+        </a>
+
+        <a href="blog/bledy-wykonczenie-lazienki.html" class="blog-card">
+          <p class="blog-card-tag">Poradnik · Łazienki</p>
+          <h2 class="blog-card-title">5 najczęstszych błędów przy wykańczaniu łazienki — poradnik dla inwestora</h2>
+          <p class="blog-card-desc">Łazienka to statystycznie najdroższe pomieszczenie w przeliczeniu na m². Błędy wykonawcze są tu najbardziej kosztowne — naprawa często wiąże się z kuciem płytek.</p>
+          <div class="blog-card-meta">
+            <span class="blog-card-date">Styczeń 2026</span>
+            <span class="blog-card-read">Czytaj →</span>
+          </div>
+        </a>
+
+      </div>
+
+      <!-- CTA -->
+      <div style="text-align:center; padding:1rem 2rem 4rem; max-width:640px; margin:0 auto;">
+        <p style="font-size:.78rem; color:rgba(255,255,255,.4); line-height:1.8; margin-bottom:1.75rem;">
+          Masz pytania dotyczące remontu lub wykończenia? Zadzwoń lub napisz — bezpłatna wycena w ciągu 24 godzin.
+        </p>
+        <a href="kontakt.html" class="btn-primary">Zapytaj o wycenę →</a>
       </div>
 
     </main>
@@ -234,7 +347,6 @@
       <a href="kontakt.html">Kontakt</a>
       <a href="blog.html">Blog</a>
     </nav>
-    <!-- PORTALE: href="#" zastąp docelowym linkiem gdy profil będzie gotowy -->
     <div style="margin-top:2rem; border-top:1px solid rgba(255,255,255,.07); padding-top:1.75rem;">
       <p style="font-size:.48rem; text-transform:uppercase; letter-spacing:.28em; color:rgba(255,255,255,.18); margin:0 0 1.2rem; font-weight:700;">Znajdź nas w sieci</p>
       <div style="display:flex; justify-content:center; align-items:center; gap:2.25rem; flex-wrap:wrap;">
@@ -250,7 +362,6 @@
       </div>
     </div>
     <p class="footer-copy">© <span id="y">2026</span> STYL-BUD Tomasz Pietraszak · NIP: 7951649407 · <a href="polityka-prywatnosci.html">Polityka prywatności</a> · <a href="mapa-strony.html">Mapa strony</a></p>
-    <!-- AGENCY CREDIT — digimar.pro (sam dół) -->
     <div style="margin-top:1rem; display:flex; justify-content:center;">
       <a href="https://digimar.pro" target="_blank" rel="noopener noreferrer"
          class="digimar-badge" aria-label="Strona stworzona przez agencję marketingową digimar.pro">
