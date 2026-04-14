@@ -1858,3 +1858,69 @@ details[open] .faq-q::after { transform: translateY(-50%) rotate(45deg); }
   .hero-slide { transition: opacity .5s; animation: none; }
   .noise-overlay { display: none; }
 }
+
+/* ===========================================================
+   MOBILE SET 2/3 — CONTENT BLOCKS
+   =========================================================== */
+
+@media (max-width: 860px) {
+  /* General: prevent horizontal scroll */
+  html { overflow-x: hidden; }
+
+  /* Główna przewaga — 2-col → 1-col */
+  .przewaga-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+
+  /* Cards wrapper — reduce excessive 100vh bottom padding */
+  .cards-wrapper { padding-bottom: 40vh !important; }
+
+  /* Jak pracuję — 4-col → 2-col */
+  .proces-steps {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 1.5rem !important;
+  }
+
+  /* FAQ — 2-col → 1-col */
+  .faq-layout {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+
+  /* Realizacje tabs — horizontally scrollable */
+  .gp-tabs {
+    flex-wrap: nowrap !important;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-bottom: .25rem;
+  }
+  .gp-tabs::-webkit-scrollbar { display: none; }
+
+  /* Reviews — stop marquee, enable touch scroll */
+  .reviews-outer {
+    overflow-x: auto !important;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    cursor: default !important;
+  }
+  .reviews-outer .reviews-track {
+    animation: none !important;
+  }
+  /* Hide duplicated slides on mobile */
+  .reviews-outer .reviews-track article[aria-hidden="true"] {
+    display: none !important;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Jak pracuję — 2-col → 1-col on small screens */
+  .proces-steps { grid-template-columns: 1fr !important; }
+
+  /* Cards wrapper — further reduce on small mobile */
+  .cards-wrapper { padding-bottom: 20vh !important; }
+
+  /* Review slides — full width on small mobile */
+  .review-slide { min-width: 85vw !important; max-width: 85vw !important; }
+}

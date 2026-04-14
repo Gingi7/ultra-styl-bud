@@ -263,10 +263,10 @@
     <!-- PRZEWAGA KONKURENCYJNA -->
     <section aria-labelledby="przewaga-heading" style="padding: clamp(4rem,8vw,7rem) var(--px); background: var(--c-bg);">
       <div style="max-width:var(--max); margin:0 auto;">
-        <div style="display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:start;">
+        <div class="przewaga-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:start;">
           <div>
             <span style="font-size:.6rem; text-transform:uppercase; letter-spacing:.2em; font-weight:700; color:var(--c-accent);">Główna przewaga</span>
-            <h2 id="przewaga-heading" class="split-animate" style="font-family:var(--font-display); font-size:clamp(1.8rem,3.5vw,3.2rem); font-weight:700; line-height:1.1; margin-top:.5rem;">Większość firm buduje<br>na podwykonawcach. Ja nie.</h2>
+            <h2 id="przewaga-heading" class="split-animate" style="font-family:var(--font-display); font-size:clamp(1.8rem,3.5vw,3.2rem); font-weight:700; line-height:1.1; margin-top:.5rem; overflow-wrap:break-word; hyphens:auto;">Większość firm buduje<br>na podwykonawcach. Ja nie.</h2>
             <p style="font-size:1.05rem; line-height:1.75; margin-top:1.5rem; opacity:.85;">
               Standardowy model działania w branży: firma przyjmuje zlecenie, a potem przekazuje je dalej — do tańszej ekipy, której nigdy nie widziałeś. Zysk dla firmy. Ryzyko i niepewność dla Ciebie.
             </p>
@@ -312,7 +312,7 @@
         <h2 id="uslugi-heading" style="font-family:var(--font-display); font-size:clamp(1.8rem,4vw,3.5rem); font-weight:700; margin-top:.5rem;">Co remontujemy</h2>
       </div>
     </section>
-    <div style="padding-bottom:100vh;">
+    <div class="cards-wrapper" style="padding-bottom:100vh;">
       <div class="card-item">
         <div class="card-inner">
           <div class="card-content">
@@ -395,7 +395,7 @@
           <h2 id="proces-heading" style="font-family:var(--font-display); font-size:clamp(1.8rem,4vw,3rem); font-weight:700; margin-top:.5rem;">Standard, nie wyjątek</h2>
           <p style="max-width:36rem; margin:.75rem auto 0; opacity:.65;">Każdy projekt realizuję według tego samego, sprawdzonego procesu — żeby nie było niespodzianek.</p>
         </div>
-        <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:2rem;">
+        <div class="proces-steps" style="display:grid; grid-template-columns:repeat(4,1fr); gap:2rem;">
           <div style="border-top:2px solid var(--c-accent); padding-top:1.5rem;">
             <div style="font-family:var(--font-display); font-size:2.5rem; font-weight:700; color:rgba(17,17,17,.1); line-height:1; margin-bottom:.75rem;">01</div>
             <h3 style="font-family:var(--font-display); font-size:.85rem; font-weight:700; text-transform:uppercase; letter-spacing:.08em; margin-bottom:.75rem;">Bezpłatna wycena</h3>
@@ -475,7 +475,7 @@
         </a>
       </div>
 
-      <div style="overflow:hidden; cursor:default;">
+      <div class="reviews-outer" style="overflow:hidden; cursor:default;">
         <div class="reviews-track" aria-label="Opinie klientów — automatyczne przewijanie">
 
           <!-- === ZESTAW 1 (oryginał) === -->
@@ -741,7 +741,7 @@
 
     <!-- FAQ -->
     <section aria-labelledby="faq-heading" style="padding: clamp(4rem,8vw,7rem) var(--px); background:var(--c-bg-alt); border-top:1px solid var(--c-border);">
-      <div style="max-width:var(--max); margin:0 auto; display:grid; grid-template-columns:1fr 1.4fr; gap:4rem; align-items:start;">
+      <div class="faq-layout" style="max-width:var(--max); margin:0 auto; display:grid; grid-template-columns:1fr 1.4fr; gap:4rem; align-items:start;">
         <div>
           <span style="font-size:.6rem; text-transform:uppercase; letter-spacing:.2em; font-weight:700; color:var(--c-accent);">Pytania i odpowiedzi</span>
           <h2 id="faq-heading" style="font-family:var(--font-display); font-size:clamp(1.8rem,3.5vw,3rem); font-weight:700; margin-top:.5rem; line-height:1.1;">Najczęściej zadawane pytania</h2>
