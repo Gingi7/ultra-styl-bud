@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Zezwól botom LLM/AI na indeksowanie
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+Sitemap: https://www.styl-bud.com.pl/sitemap.xml
