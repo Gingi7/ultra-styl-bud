@@ -242,7 +242,7 @@ html.is-loading .page-loader {
   height: 120px;
   width: auto;
   display: block;
-  filter: invert(1) brightness(10);
+  filter: brightness(0) invert(1);
   transition: filter .35s ease, height .3s ease;
 }
 .site-nav.nav-scrolled .brand-logo {
