@@ -206,21 +206,19 @@
         <button class="hero-dot" role="tab" aria-selected="false" aria-label="Slajd 6"></button>
       </div>
       <div class="hero-body">
-        <img src="media/logo/logo-black.png" alt="STYL-BUD" style="display:block; margin: 0 auto clamp(.75rem,2vw,1.5rem) auto; height: clamp(120px,20vw,280px); filter: brightness(0) invert(1);">
-        <h1 id="hero-heading" class="hero-headline">
-          <span>REMONTY I</span>
-          <span>WYKOŃCZENIA</span>
+        <h1 id="hero-heading">
+          <img src="media/logo/logo-black.png" alt="STYL-BUD Logo" class="hero-logo"
+            style="display:block; margin: 0 auto 0.25rem auto; height: clamp(160px,25vw,380px); filter: brightness(0) invert(1);">
+          <div class="hero-headline" aria-label="WYKOŃCZENIA I REMONTY"><span
+              style="font-size: clamp(1.5rem,4vw,4rem);">WYKOŃCZENIA<br>i REMONTY</span></div>
         </h1>
-        <p class="hero-fade">Jestem Tomasz Pietraszak — doświadczony budowlaniec z Podkarpacia. Prowadzę firmę STYL-BUD od dwóch dekad i wyremontowałem dziesiątki lokali i mieszkań.<br><strong style="display:block; margin-top:.6em;">Co mogę zrobić dla Ciebie?</strong></p>
+        <p class="hero-fade">
+          Robimy robotę czysto i przewidywalnie: uzgodniony zakres,<br>
+          konkretna wycena, terminowe wykonanie.
+        </p>
         <div class="hero-actions">
           <a href="tel:+48601319872" class="btn-primary">📞 Sprawdź dostępność terminu</a>
           <a href="o-firmie.html" class="btn-inv">Dowiedz się więcej →</a>
-        </div>
-        <div class="hero-note">
-          <span class="hero-note-item">Bez podwykonawców</span>
-          <span class="hero-note-item">Umowa i harmonogram na piśmie</span>
-          <span class="hero-note-item">Gwarancja na robociznę</span>
-          <span class="hero-note-item">Województwo Podkarpackie</span>
         </div>
       </div>
     </section>
@@ -896,39 +894,5 @@
 <script src="assets/js/vendor/ScrollTrigger.min.js"></script>
 <script src="assets/js/vendor/lenis.min.js"></script>
 <script src="assets/js/main.js"></script>
-<script>
-(function () {
-  var phrases = [
-    ['REMONTY I',       'WYKOŃCZENIA'],
-    ['JEDEN FACHOWIEC', 'PEŁNA KONTROLA'],
-    ['BEZ EKIP',        'BEZ STRESU'],
-    ['EFEKT',           'NA LATA']
-  ];
-  var idx = 0;
-
-  function rotate() {
-    idx = (idx + 1) % phrases.length;
-    var spans = document.querySelectorAll('.hero-headline span');
-    if (!spans.length || typeof gsap === 'undefined') return;
-    gsap.to(spans, {
-      y: '-110%', duration: 0.85, ease: 'power3.inOut', stagger: 0.07,
-      onComplete: function () {
-        spans.forEach(function (s, i) {
-          s.textContent = phrases[idx][i] !== undefined ? phrases[idx][i] : '';
-        });
-        gsap.fromTo(spans,
-          { y: '110%' },
-          { y: '0%', duration: 1.1, ease: 'power4.out', stagger: 0.1 }
-        );
-      }
-    });
-  }
-
-  /* Startuje 4 s po załadowaniu, zmienia co 7 s */
-  setTimeout(function () {
-    setInterval(rotate, 7000);
-  }, 4000);
-}());
-</script>
 </body>
 </html>
