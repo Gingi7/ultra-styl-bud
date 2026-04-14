@@ -313,7 +313,6 @@ html.is-loading .page-loader {
     top: 0; left: 0; right: 0;
     z-index: 500 !important;
     background: rgba(17,17,17,.97) !important;
-    backdrop-filter: blur(8px);
     box-shadow: 0 1px 0 rgba(255,255,255,.07) !important;
     color: #fff !important;
   }
@@ -351,6 +350,7 @@ html.is-loading .page-loader {
   .nav-sub a { font-size: .82rem !important; color: rgba(255,255,255,.65) !important; opacity: 1 !important; }
   .nav-sub a:hover, .nav-sub a[aria-current="page"] { color: var(--c-accent) !important; }
   .nav-full { display: inline; }
+  .nav-short { display: none; }
 }
 
 /* ===========================================================
