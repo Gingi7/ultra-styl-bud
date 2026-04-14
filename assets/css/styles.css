@@ -490,7 +490,7 @@ html.is-loading .page-loader {
   position: relative;
   z-index: 2;
   color: #fff;
-  text-align: center;
+  text-align: left;
 }
 .page-hero-kicker {
   font-size: .6rem;
@@ -509,7 +509,7 @@ html.is-loading .page-loader {
   display: flex !important;
   flex-direction: row !important;
   flex-wrap: wrap !important;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 0.1em;
 }
 .page-hero-title span {
