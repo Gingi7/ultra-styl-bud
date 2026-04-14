@@ -397,16 +397,12 @@ html.is-loading .page-loader {
   background-position: center;
   opacity: 0;
   filter: brightness(0.7);
-  transition: opacity 2s ease-in-out;
   transform: scale(1);
+  transition: opacity 2s ease-in-out, transform 14s ease-out;
 }
 .hero-slide.active {
   opacity: 1;
-  animation: heroKenBurns 14s ease-out forwards;
-}
-@keyframes heroKenBurns {
-  from { transform: scale(1); }
-  to   { transform: scale(1.1); }
+  transform: scale(1.1);
 }
 .hero-overlay {
   position: absolute;
