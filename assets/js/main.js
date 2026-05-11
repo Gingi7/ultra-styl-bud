@@ -425,13 +425,28 @@
       });
     }
 
-    /* Hero */
+    /* Hero
+       UWAGA: jeśli strona wygląda statycznie bez animacji (szczególnie na desktopie/macOS),
+       sprawdź w konsoli: window.matchMedia('(prefers-reduced-motion: reduce)').matches
+       Jeśli true → animacje są wyłączone przez System Settings → Accessibility → Reduce motion.
+       Fix: odznacz "Reduce motion" w ustawieniach systemu. Kod jest poprawny. */
     const heroSpans = $$('.hero-headline span');
     if (heroSpans.length) {
-      gsap.to(heroSpans, { y: 0, stagger: 0.12, duration: 1.6, ease: 'power4.out' });
-      gsap.to('.hero-kicker', { opacity: 1, y: 0, duration: 1, delay: 0.25, ease: 'power3.out' });
-      gsap.to('.hero-fade', { opacity: 1, duration: 1, delay: 0.5 });
-      gsap.to('.hero-actions', { opacity: 1, duration: 1, delay: 0.7 });
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (reduceMotion) {
+        /* Reduce motion aktywny — elementy widoczne natychmiast, bez translateY/scale/parallax.
+           CSS heroRotFadeReduced nadal rotuje złote hasła przez opacity-only. */
+        gsap.set(['.hero-logo', heroSpans, '.hero-kicker', '.hero-fade', '.hero-actions'], { opacity: 1, y: 0, yPercent: 0, scale: 1 });
+      } else {
+        gsap.fromTo('.hero-logo',
+          { opacity: 0, y: 16, scale: 0.96 },
+          { opacity: 1, y: 0, scale: 1, duration: 0.85, delay: 0.1, ease: 'power3.out' }
+        );
+        gsap.to(heroSpans, { y: 0, stagger: 0.12, duration: 1.6, delay: 0.25, ease: 'power4.out' });
+        gsap.to('.hero-kicker', { opacity: 1, y: 0, duration: 1, delay: 0.35, ease: 'power3.out' });
+        gsap.to('.hero-fade', { opacity: 1, duration: 1, delay: 0.55 });
+        gsap.to('.hero-actions', { opacity: 1, duration: 1, delay: 0.7 });
+      }
 
       if ($$('.hero-slider').length) {
         gsap.to('.hero-slider', {
