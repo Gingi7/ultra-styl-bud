@@ -423,8 +423,8 @@ body.menu-open {
   .brand-logo { height: 44px !important; filter: brightness(0) invert(1) !important; }
   .nav-toggle { display: flex; z-index: 600; }
   .hero-logo {
-  height: clamp(170px, 46vw, 260px);
-  margin: 0 auto 0.7rem;
+  height: clamp(190px, 54vw, 300px) !important;
+  margin: 0 auto 0.5rem !important;
   display: block;
 }
   .hero-body { padding-top: 88px !important; }
@@ -524,8 +524,8 @@ body.menu-open {
   z-index: 1;
 }
 .hero-logo {
-  height: clamp(220px, 22vw, 390px);
-  margin: 0 auto 0.6rem;
+  height: clamp(260px, 26vw, 460px);
+  margin: 0 auto 0.4rem;
   display: block;
 }
 .hero-body {
