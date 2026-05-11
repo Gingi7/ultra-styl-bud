@@ -423,10 +423,10 @@ body.menu-open {
   .brand-logo { height: 44px !important; filter: brightness(0) invert(1) !important; }
   .nav-toggle { display: flex; z-index: 600; }
   .hero-body { padding-top: 88px !important; }
-  .hero-headline { margin-top: -1rem !important; }
-  .hero-headline span { font-size: clamp(1.65rem,4.4vw,4.4rem) !important; }
-  .hero-rot-word { font-size: clamp(1.65rem,4.4vw,4.4rem) !important; }
-  .hero-rotating-headline { margin-top: -.5rem; }
+  .hero-headline { margin-top: 0 !important; }
+  .hero-headline span { font-size: clamp(2rem, 8.5vw, 4rem) !important; }
+  .hero-rot-word { font-size: clamp(1.1rem, 5.5vw, 2.5rem) !important; }
+  .hero-rotating-headline { margin-top: -0.3rem; height: clamp(2.8rem, 11vw, 5.5rem); }
   .mobile-menu-overlay .nav-links {
     width: 100%;
     max-width: 28rem;
@@ -539,13 +539,13 @@ body.menu-open {
 }
 .hero-headline {
   font-family: var(--font-display);
-  font-size: clamp(2.2rem, 8.5vw, 8rem);
+  font-size: clamp(2.5rem, 7vw, 5.5rem);
   font-weight: 700;
   line-height: .92;
   letter-spacing: -.02em;
   overflow: hidden;
   padding-top: .15em;
-  padding-bottom: .28em; /* zapobiega ucinaniu ogonków ę ń ó */
+  padding-bottom: 0.5rem;
 }
 .hero-headline span {
   display: block;
@@ -557,10 +557,10 @@ body.menu-open {
   line-height: .92;
   letter-spacing: -.02em;
   position: relative;
-  height: 2.4em;
+  height: clamp(3rem, 7.5vw, 7.5rem);
   text-align: center;
   opacity: 0;
-  margin-top: -.5rem;
+  margin-top: -0.3rem;
   animation: heroRHFadeIn 1s ease .35s forwards;
 }
 .hero-rot-word {
@@ -570,7 +570,7 @@ body.menu-open {
   opacity: 0;
   color: var(--c-accent);
   font-family: var(--font-display);
-  font-size: clamp(1.5rem, 4vw, 4rem);
+  font-size: clamp(1.4rem, 4.5vw, 3.4rem);
   font-weight: 700;
   letter-spacing: -.02em;
   line-height: .92;
@@ -591,7 +591,7 @@ body.menu-open {
 }
 .hero-fade {
   opacity: 0;
-  margin-top: 1.5rem;
+  margin-top: 2.5rem;
   font-size: clamp(1rem, 1.3vw, 1.2rem);
   font-weight: 400;
   line-height: 1.65;
