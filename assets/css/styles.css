@@ -424,7 +424,7 @@ body.menu-open {
   .nav-toggle { display: flex; z-index: 600; }
   .hero-logo {
   height: clamp(190px, 54vw, 300px) !important;
-  margin: 0 auto 0.5rem !important;
+  margin: 0 auto -0.6rem !important;
   display: block;
 }
   .hero-body { padding-top: 88px !important; }
@@ -525,7 +525,7 @@ body.menu-open {
 }
 .hero-logo {
   height: clamp(260px, 26vw, 460px);
-  margin: 0 auto 0.4rem;
+  margin: 0 auto -1.2rem;
   display: block;
 }
 .hero-body {
