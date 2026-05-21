@@ -9,94 +9,150 @@
   </url>
 
   <url>
-    <loc>https://www.styl-bud.com.pl/wykonczenia-mieszkan.html</loc>
+    <loc>https://www.styl-bud.com.pl/wykonczenia-mieszkan</loc>
     <lastmod>2026-05-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://www.styl-bud.com.pl/remonty-generalne.html</loc>
+    <loc>https://www.styl-bud.com.pl/remonty-generalne</loc>
     <lastmod>2026-05-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://www.styl-bud.com.pl/remonty-lazienek.html</loc>
+    <loc>https://www.styl-bud.com.pl/remonty-lazienek</loc>
     <lastmod>2026-05-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://www.styl-bud.com.pl/remont-pod-klucz.html</loc>
+    <loc>https://www.styl-bud.com.pl/remont-pod-klucz</loc>
     <lastmod>2026-05-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://www.styl-bud.com.pl/lokale-uslugowe.html</loc>
+    <loc>https://www.styl-bud.com.pl/lokale-uslugowe</loc>
     <lastmod>2026-05-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://www.styl-bud.com.pl/galeria.html</loc>
+    <loc>https://www.styl-bud.com.pl/galeria</loc>
     <lastmod>2026-05-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.styl-bud.com.pl/realizacje.html</loc>
+    <loc>https://www.styl-bud.com.pl/realizacje</loc>
     <lastmod>2026-05-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.styl-bud.com.pl/o-firmie.html</loc>
+    <loc>https://www.styl-bud.com.pl/o-firmie</loc>
     <lastmod>2026-05-11</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.styl-bud.com.pl/kontakt.html</loc>
+    <loc>https://www.styl-bud.com.pl/kontakt</loc>
     <lastmod>2026-05-11</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.styl-bud.com.pl/faq.html</loc>
+    <loc>https://www.styl-bud.com.pl/faq</loc>
     <lastmod>2026-05-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.styl-bud.com.pl/mapa-strony.html</loc>
+    <loc>https://www.styl-bud.com.pl/mapa-strony</loc>
     <lastmod>2026-05-11</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
 
   <url>
-    <loc>https://www.styl-bud.com.pl/polityka-prywatnosci.html</loc>
+    <loc>https://www.styl-bud.com.pl/polityka-prywatnosci</loc>
     <lastmod>2026-05-11</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
 
   <url>
-    <loc>https://www.styl-bud.com.pl/obszar-dzialania.html</loc>
+    <loc>https://www.styl-bud.com.pl/obszar-dzialania</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.styl-bud.com.pl/blog</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.styl-bud.com.pl/blog/bledy-wykonczenie-lazienki</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://www.styl-bud.com.pl/blog/budowa-domu-krok-po-kroku</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://www.styl-bud.com.pl/blog/ceramika-czy-gazobeton</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://www.styl-bud.com.pl/blog/koszt-wykonczenia-podkarpacie</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://www.styl-bud.com.pl/blog/plytki-wielkoformatowe</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://www.styl-bud.com.pl/blog/remont-lazienki-podkarpacie</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://www.styl-bud.com.pl/blog/termomodernizacja-domu</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
   </url>
 
 </urlset>
